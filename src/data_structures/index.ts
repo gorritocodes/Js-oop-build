@@ -6,7 +6,7 @@ import LinkedList from "./LinkedList";
 import Maps from "./Maps";
 import PriorityQueue from "./PriorityQueue";
 import Queue from "./Queue";
-import Sets from "./Sets";
+import Set from "./Set";
 import Stack from "./Stack";
 import Trie from "./Trie";
 
@@ -19,7 +19,7 @@ module.exports = {
     Maps,
     PriorityQueue,
     Queue,
-    Sets,
+    Set,
     Stack,
     Trie,
 };
