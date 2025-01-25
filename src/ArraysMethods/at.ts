@@ -6,7 +6,7 @@
  * @returns {unknown} The item at the specified index or undefined if the index is out of range.
  */
 
-export default function at(array: any[], index: number): unknown | undefined {
+export default function at(array: any[], index: number): unknown[] | undefined {
     index = index < 0 ? array.length + index : index;
     return array[index];
 }

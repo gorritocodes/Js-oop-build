@@ -1,3 +1,3 @@
-export default function entries(array: []) {
+export default function entries(array: any[]) {
     return array;
 }

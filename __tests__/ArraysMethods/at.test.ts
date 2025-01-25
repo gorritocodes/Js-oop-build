@@ -10,7 +10,7 @@ describe("at function, should return the element at the given index", () => {
         expect(at(array, -1)).toBe(5);
     });
     test("should return undefined when index is out of bounds", () => {
-        expect(at(array, 6)).toBeUndefined();
+        expect(at(array, 5)).toBeUndefined();
     });
     test("should return undefined when negative index is out of bounds", () => {
         expect(at(array, -6)).toBeUndefined();
