@@ -1,5 +1,5 @@
 import { expect, test } from "@jest/globals";
-import copyWhitIn from "../../src/Arrays/copyWithIn";
+import copyWhitIn from "../../src/ArraysMethods/copyWithIn";
 
 describe(`copyWithin function, should return a new array, with the content of the first array modified copying an element in a specific index to the place specified in the third argument. 
     Also is theres a fourth argument, it allows to copy from the position specified in the third argument to the position specified in the fourth argument.`, () => {
