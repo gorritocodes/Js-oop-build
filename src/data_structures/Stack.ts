@@ -1,4 +1,4 @@
-export default class Stack {
+class Stack {
     private items: any[] = [];
     readonly length: number | undefined;
 
@@ -8,3 +8,5 @@ export default class Stack {
 
     push(item: any) {}
 }
+
+export default Stack;
