@@ -1,4 +1,3 @@
-import { expect, test } from "@jest/globals";
 import at from "../../src/ArraysMethods/at";
 const array = [1, 2, 3, 4, 5];
 

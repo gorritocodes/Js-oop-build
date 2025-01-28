@@ -1,4 +1,3 @@
-import { expect, test } from "@jest/globals";
 import concat from "../../src/ArraysMethods/concat";
 
 describe("concat function, should return a new array, with the content of the first array followed by the content of the second array", () => {
