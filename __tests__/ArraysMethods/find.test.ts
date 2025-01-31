@@ -16,12 +16,11 @@ describe("The find() method of Array instances returns the first element in the 
             find([1, 2, 3, 4, 5], (e) => typeof e === "boolean")
         ).toBeUndefined();
     });
-    it("should return the first ocurrence of the item that satisfy the function", () => {
+    it("should return the first occurrence of the item that satisfy the function", () => {
         expect(
-            find(
-                [false, false, 1, 2, 3, false],
-                (e) => typeof e === "number" && e > 2
-            )
+            find([false, false, 1, 2, 3, false], (e) => {
+                return typeof e === "number" && e > 2;
+            })
         ).toBe(3);
     });
 });
