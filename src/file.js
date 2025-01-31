@@ -24,3 +24,7 @@ let user1 = new user("John", 20);
 user1.name = "Jorge";
 user1.changeName("Ari");
 console.log(user1);
+
+const fib = function (num) {
+    return num === 0 ? 0 : num === 1 ? 1 : fib(num - 1) + fib(num - 2);
+};
