@@ -41,3 +41,7 @@ function fibonacci(n) {
 console.log(fibonacci(3));
 
 // merge problem
+
+const fib = function (num) {
+    return num === 0 ? 0 : num === 1 ? 1 : fib(num - 1) + fib(num - 2);
+};
