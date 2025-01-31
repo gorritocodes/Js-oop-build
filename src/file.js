@@ -39,3 +39,5 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(3));
+
+// merge problem
