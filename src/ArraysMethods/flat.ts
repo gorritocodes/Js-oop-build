@@ -1,25 +1,27 @@
-export default function flat(array: any[], number: number = Infinity) {
-    const newArray = [...array];
-    let value = number;
-    //do a recursive function
-    //base case
+export default function flat(array: any[], number: number = Infinity): any[] {
+    //Base case
+    //if array is already flat return
     if (
-        newArray.every((e) => {
-            !e.isArray();
+        array.every((e) => {
+            Array.isArray(e);
         })
     ) {
-        return newArray;
+        return array;
     }
-    
-    let finalArray = value > 0 ? [] : 
-    
-    for (let element of newArray) {
-        if (!element.isArray()) {
-            element = flat(element, number - 1);
-            finalArray.push(...element);
-        }
-        finalArray.push(element);
+    if (number <= 0) {
+        return array;
     }
 
-    return newArray;
+    let flatArray: any[] = [];
+    // concat arg
+    for (let element of array) {
+        if (Array.isArray(element)) {
+            flatArray = [...flatArray, ...flat(element, number - 1)];
+        } else {
+            flatArray = [...flatArray, element];
+        }
+    }
+    return flatArray;
+
+    // each arg is array reduce and apply for each arg.
 }
