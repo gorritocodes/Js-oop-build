@@ -1,1 +1,2 @@
-export default function map(array, callback) {}
+export default function map(array: any[], callback ()=> boolean) {}
+
